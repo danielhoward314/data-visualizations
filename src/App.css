@@ -1,32 +1,136 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0.67em;
+  font: 300 1.5em Helvetica Neue;
+}
+
+h1 {
+  font: 400 1.5em Helvetica Neue;
+  padding: 10px;
+}
+
+img {
+  width: 300px;
+  height: 199px;
+}
+
+.header-content {
+  display: flex;
+}
+
+svg {
+  font: 10px sans-serif;
+}
+
+.y.axis path {
+  display: none;
+}
+
+.y.axis line {
+  stroke: #fff;
+  stroke-opacity: .2;
+  shape-rendering: crispEdges;
+}
+
+.y.axis .zero line {
+  stroke: #000;
+  stroke-opacity: 1;
+}
+
+.title {
+  font: 300 78px Helvetica Neue;
+  fill: #666;
+}
+
+.birthyear,
+.age {
+  text-anchor: middle;
+}
+
+.birthyear {
+  fill: #fff;
+}
+
+rect {
+  fill-opacity: .6;
+  fill: #e377c2;
+}
+
+rect:first-child {
+  fill: #1f77b4;
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.caption {
+    margin: 1em;
+    font: 300 1.0em Helvetica Neue;
+}
+
+Link {
+  display: inline-block;
+}
+
+.about-content {
+  width: 50%;
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 20vh;
 }
 
-.App-link {
-  color: #61dafb;
+.wrapper div {
+  margin-top: 5vh;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about-text {
+  width: 40%;
+  font: 355 1.0em Helvetica Neue;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: salmon;
+}
+
+.footer a {
+  font: 300 1.5em Helvetica Neue;
+}
+
+.footer-content {
+  padding: 5px;
+}
+
+.footer-content a {
+  padding-left: 5px;
 }
